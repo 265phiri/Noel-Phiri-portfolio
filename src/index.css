@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #051f29;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(203, 203, 203);
+    border-radius: 6px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #18dd98;
+}
+div:active,
+a:active,
+button:active,
+input:active {
+ -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove the blue highlight for tap targets on iOS Safari */
+a:active,
+button:active,
+input:active {
+ -webkit-touch-callout: none;
+}
